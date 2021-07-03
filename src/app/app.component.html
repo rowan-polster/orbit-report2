@@ -1,1 +1,5 @@
-<app-orbit-list [satellites]="sourceList"></app-orbit-list>
+<app-orbit-list [satellites]="displayList"></app-orbit-list>
+<div class="search-form">
+    <input type = "text" placeholder = "Search for a satellite" #searchTerm>
+    <button (click) = "search(searchTerm.value)">Search</button>
+</div>
